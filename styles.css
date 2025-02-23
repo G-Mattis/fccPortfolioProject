@@ -1,0 +1,257 @@
+:root {
+    font-family: Helvetica, sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(
+      90deg,
+      white 3%,
+      #285397,
+      #572D8B
+    );
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .sonic {
+    width: 70px;
+    height: 70px;
+    display: flex;
+  }
+  
+  .sonic:active {
+    content:url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.tenor.com%2Fnpv4_WeS3FMAAAAC%2Fsonic.gif&f=1&nofb=1&ipt=e55fdef2d606542e3440a5a2ba45ad8eedf41f64a670b134c11e8ca0d5ffeb06&ipo=images);
+    transform: scale(1.4);
+    cursor: none;
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    padding: 20px;
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:hover li {
+    background-color:#7D5EA3;
+  }
+  
+  .welcome {
+    height:100vh;
+    background: linear-gradient(
+      90deg,
+      white 5%,
+      #F6D991,
+      #F7CF6A,
+      #F3BD35
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  .textOnScreen {
+    text-align: center;
+  }
+  
+  h1 {
+    color: #E6E6E6;
+    text-shadow: 2px 2px 4px #151515;
+    font-size: 3rem;
+  }
+  
+  h4 {
+    color: rgb(
+      206,
+      145,
+      120);
+      text-shadow: 2px 2px 4px #151515;
+      font-size: 2rem;
+      font-style: italic
+  }
+  
+  h4::before {
+    content: "< ";
+  }
+  
+  h4::after {
+    content: " />"
+  }
+  
+  .projects {
+    background: linear-gradient(
+      90deg,
+      white 5%,
+      #A34747,
+      #9F3434,
+      #CD0F27
+    );
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h2 {
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+    color: #E6E6E6;
+    text-shadow: 2px 2px 4px #151515;
+    margin: 170px 0 70px 0;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 100px;
+  }
+  
+  .project {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .project-tile {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; 
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .project-title {
+    background-color: #333;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  .profile-link {
+    border: solid;
+    margin: 130px 0 50px 0;
+    background-color: #333;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+  
+  .profile-link::after{
+    content: " ->";
+    font-weight: 800;
+  }
+  
+  .contact {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(
+      90deg,
+      white 5%,
+      #333 15%,
+      #222 85%,
+      #111
+    );
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 80vh;
+  }
+  
+  .h1 {
+    margin: 5px;
+    font-size: 3rem
+  }
+  
+  h5 {
+    font-style: italic;
+    color: white;
+    margin: 5px;
+    font-size: 1rem;
+  }
+  
+  .socials {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 30px;
+    font-size: 2rem;
+    margin: 100px 0;
+  }
+  
+  .socials a:hover {
+    transform: translateY(3px);
+  }
+  
+  footer {
+    border-top: 5px solid #285397;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(
+      90deg,
+      rgba(40, 83, 151, 0.4),
+      #285397,
+      #572D8B
+    );
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: 22px;
+    font-family: Georgia, serif;
+  }
+  
+  .codelink {
+    background-color: #572D8B;
+    text-decoration: underline;
+  }
+  
+  .codelink:hover {
+    background-color: #280D4D;
+  }
+  
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+    .socials {
+      grid-template-columns: 1fr;
+    }
+    footer {
+      flex-direction: column;
+      align-items: center; 
+      justify-content: center;
+      height: auto;
+      text-align: center;
+    }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+      * {
+          scroll-behavior: smooth;
+      }
+  }
