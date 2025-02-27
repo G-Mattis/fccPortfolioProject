@@ -11,25 +11,12 @@
     position: fixed;
     width: 100%;
     background: linear-gradient(
-      90deg,
-      white 3%,
+      160deg,
       #285397,
       #572D8B
     );
     display: flex;
-    justify-content: space-between;
-  }
-  
-  .sonic {
-    width: 70px;
-    height: 70px;
-    display: flex;
-  }
-  
-  .sonic:active {
-    content:url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.tenor.com%2Fnpv4_WeS3FMAAAAC%2Fsonic.gif&f=1&nofb=1&ipt=e55fdef2d606542e3440a5a2ba45ad8eedf41f64a670b134c11e8ca0d5ffeb06&ipo=images);
-    transform: scale(1.4);
-    cursor: none;
+    justify-content: flex-end;
   }
   
   ul {
@@ -58,8 +45,7 @@
   .welcome {
     height:100vh;
     background: linear-gradient(
-      90deg,
-      white 5%,
+      135deg,
       #F6D991,
       #F7CF6A,
       #F3BD35
@@ -100,8 +86,7 @@
   
   .projects {
     background: linear-gradient(
-      90deg,
-      white 5%,
+     325deg,
       #A34747,
       #9F3434,
       #CD0F27
@@ -169,8 +154,7 @@
     display: flex;
     flex-direction: column;
     background: linear-gradient(
-      90deg,
-      white 5%,
+      180deg,
       #333 15%,
       #222 85%,
       #111
@@ -207,13 +191,11 @@
   }
   
   footer {
-    border-top: 5px solid #285397;
     display: flex;
     width: 100%;
     height: 100px;
     background: linear-gradient(
-      90deg,
-      rgba(40, 83, 151, 0.4),
+      160deg,
       #285397,
       #572D8B
     );
@@ -226,12 +208,12 @@
   }
   
   .codelink {
-    background-color: #572D8B;
+    background-color: #444;
     text-decoration: underline;
   }
   
   .codelink:hover {
-    background-color: #280D4D;
+    background-color: #222;
   }
   
   @media (max-width: 768px) {
